@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 LastFM + Grooveshark Extension
 ==========================
 
@@ -22,3 +23,9 @@ Click the LastFM + Grooveshark chrome extension icon
 Enter a LastFM User ID and click submit
 
 Grooveshark will populate with user's LastFM loved tracks. 
+=======
+phone-home-chrome-extension
+===========================
+
+Chrome Extension for Base Two Phone Home
+>>>>>>> a22ea00a6bd5abba72c929658bd68632e1f4232f

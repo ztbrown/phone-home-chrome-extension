@@ -57,7 +57,7 @@ function composeIntercept(ev) {
                 //We have to check again because of rapidly changing elements
                 if(composeMenu.find('#gCryptEncrypt').length === 0) {
                     //The below logic is for inserting the form into the windows, different behavior for in window compose and popout compose.
-                    var encryptionFormOptions = '<span id="gCryptEncrypt" class="btn-group" style="margin-left:10px"><input id="createAndActivate" type="checkbox"/> Track with PhoneHome</span>';
+                    var encryptionFormOptions = '<span id="gCryptEncrypt" class="btn-group" style="margin-left:10px"><button id="createAndActivate">Track with PhoneHome</button></span>';
 
                     if (maxSizeCheck && maxSizeCheck.length > 0 && maxSizeCheck.css('max-height') === maxSizeCheck.css('height')) {
                         composeMenu.find('.n1tfz :nth-child(6)').after('<td class="gU" style="min-width: 360px;">' + encryptionFormOptions + '</td>');

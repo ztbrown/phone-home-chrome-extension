@@ -2,14 +2,14 @@ TrackerService = (function ($, _) {
 
     var TrackerService = {
 
-        create: function () {
+        create: function (name) {
             return $.ajax({
                 type: 'POST',
                 url: Common.buildUrl('trackers'),
                 dataType: 'json',
                 data: {
                     'auth_token': Common.authToken,
-                    'tracker' : {name: "name"}
+                    'tracker' : {name: name}
                 }
             });
         },

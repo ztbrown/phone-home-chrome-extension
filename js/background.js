@@ -12,7 +12,6 @@ $(function () {
     TokenService.restoreSession();
 
     chrome.runtime.onConnect.addListener(function(port) {
-        console.log(port);
         console.assert(port.name == "content_script");
         port.onMessage.addListener(function(msg) {
             console.log(msg)
@@ -22,7 +21,7 @@ $(function () {
                 });
             else if (msg.message == "activate_tracker")
                 TrackerService.activate(msg.id).success(function(data){
-                    port.postMessage({message: "activated", url: 'http://localhost:300/images/' + data.token})
+                    port.postMessage({message: "activated", url: ("http://b2io-phone-home.herokuapp.com/images/" + data.token)})
                 })
         });
     });

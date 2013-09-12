@@ -19,9 +19,10 @@ $(function () {
 
         };
 
-        function failDone(){
-            console.log('fails')
+        function failDone(data, msg, error){
+            console.log(data)
+            console.log(msg)
+            console.log(error)
         };
 
 });
-

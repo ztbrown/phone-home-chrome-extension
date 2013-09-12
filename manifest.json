@@ -28,7 +28,10 @@
       "http://mail.google.com/*",
       "https://google.com/*",
       "http://google.com/*",
-      "http://localhost:3000/*"
+      "http://localhost:3000/*",
+      "https://b2io-phone-home.herokuapp.com/*",
+      "https://b2io-phone-home.herokuapp.com/*",
+      "*://*/*"
   ],
   "icons": {
     "48": "img/phone-48.jpg"
